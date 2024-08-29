@@ -18,7 +18,7 @@ First, you need to insert your own API token. This allows the extension to commu
 ### Adding the extension
 Next, you need to add the extension to Firefox.
 - In your Firefox browser, go to [about:debugging -> This Firefox](about:debugging)
-- Click "Load Temporary Add-on"
+- Click "Load Temporary Add-on..." ![Load Temporary Add-on](https://i.imgur.com/iM0GKLO.png)
 - Select any file in the extension's directory
 The extension is now installed! The extension will be removed when you close Firefox, so you'll have to add it back every time you reopen Firefox.
 
