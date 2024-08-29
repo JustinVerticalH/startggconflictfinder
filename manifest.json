@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "StartGGConflicts",
+    "version": "1.0",
+    "permissions": [
+      "https://api.start.gg/*",
+      "storage"
+    ],
+
+    "description": "Checks start.gg entrants and colors their name red if they're playing a set in another bracket already.",
+  
+    "icons": {
+      "48": "start.gg_Icon_Small_RGB.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://www.start.gg/admin/tournament/*/brackets/*/*/*"],
+        "exclude_matches": ["https://www.start.gg/admin/tournament/*/event/*/set/*"],
+        "js": ["findConflicts.js"]
+      }
+    ]
+  }
+  
