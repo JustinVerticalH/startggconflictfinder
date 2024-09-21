@@ -1,10 +1,17 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "StartGGConflicts",
     "version": "1.0",
+    "homepage_url": "https://github.com/JustinVerticalH/startggconflictfinder",
+
     "permissions": [
-      "https://api.start.gg/*",
+      "activeTab",
+      "scripting",
       "storage"
+    ],
+
+    "host_permissions": [
+      "https://api.start.gg/*"
     ],
 
     "description": "Checks start.gg entrants and colors their name red if they're playing a set in another bracket already.",
@@ -12,7 +19,11 @@
     "icons": {
       "48": "start.gg_Icon_Small_RGB.png"
     },
-  
+
+    "action": {
+      "default_popup": "/action/tokenButton.html"
+    },
+
     "content_scripts": [
       {
         "matches": ["https://www.start.gg/admin/tournament/*/brackets/*/*/*"],
@@ -21,4 +32,3 @@
       }
     ]
   }
-  
