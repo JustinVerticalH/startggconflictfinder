@@ -20,10 +20,6 @@
       "48": "start.gg_Icon_Small_RGB.png"
     },
 
-    "action": {
-      "default_popup": "/action/tokenButton.html"
-    },
-
     "content_scripts": [
       {
         "matches": ["https://www.start.gg/admin/tournament/*/brackets/*/*/*"],
